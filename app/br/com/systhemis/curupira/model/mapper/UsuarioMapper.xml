@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="br.com.systhemis.curupira.model.mapper.UsuarioMapper">
+  <select id="selectUsuario" parameterType="int" resultMap="usuarioResultMap">
+    select codigo,nome,login,senha from usuario where codigo = #{id}
+  </select>
+  
+  
+  <resultMap id="usuarioResultMap" type="br.com.systhemis.curupira.model.Usuario">
+      <id property="id"            column="codigo"/>
+      <result property="nome"      column="nome"/>
+      <result property="login"     column="login"/>
+      <result property="senha"     column="senha"/>
+  </resultMap>
+
+</mapper>
