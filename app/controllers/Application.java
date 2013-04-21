@@ -26,7 +26,7 @@ public class Application extends Controller {
   public Result index() throws SQLException {
     SqlSession session = sessionFactory.openSession();
     try {
-    	
+    	 Logger.info("Entrou na versão");
     	UsuarioMapper mapper = session.getMapper(UsuarioMapper.class);
     	Usuario usuario = mapper.selectUsuario(1);
     
@@ -37,7 +37,8 @@ public class Application extends Controller {
   }
   
   public static Result phones(String phoneId) throws IOException {
-	    File jsonFile = Play.application().getFile("public/phones/"+phoneId);
+	    Logger.info("Está usando phones no Apllication");
+	    File jsonFile = Play.application().getFile("public/phones/dell-streak-7.json");
 	    String json = FileUtils.readFileToString(jsonFile);
 	    return ok(json).as("application/json");
 	  }
