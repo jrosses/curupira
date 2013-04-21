@@ -7,14 +7,16 @@
     <environment id="default">
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
+      <!--  
         <property name="driver" value="org.postgresql.Driver"/>
-     <!--   <property name="url" value="jdbc:postgresql://localhost/signatal"/>
-        <property name="username" value="signatal"/>
-        <property name="password" value="signatal"/>
-        -->
-         <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + @dbUrl.getPath() }"/>
+           <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + @dbUrl.getPath() }"/>
          <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
          <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
+         -->
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
       </dataSource>
     </environment>
   </environments>
@@ -27,8 +29,8 @@
 -->
   <mappers>
    <!-- <mapper resource="app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>-->
-    <mapper url="file:///ProjetosJava/curupira/app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>
-    <!-- <package name="br.com.systhemis.curupira.model.mapper"/>-->
+   <mapper url="file:///ProjetosJava/curupira/app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>
+   <!--  <package name="br.com.systhemis.curupira.model.mapper"/>-->
   </mappers>
   
 </configuration>
