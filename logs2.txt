@@ -1,0 +1,102 @@
+2013-04-21T03:34:17.412343+00:00 app[web.1]: Play server process ID is 2
+2013-04-21T03:34:19.236365+00:00 app[web.1]: Oops, cannot start the server.
+2013-04-21T03:34:19.236612+00:00 app[web.1]: java.lang.NullPointerException
+2013-04-21T03:34:19.237083+00:00 app[web.1]: 	at java.util.Hashtable.put(Hashtable.java:411)
+2013-04-21T03:34:19.237274+00:00 app[web.1]: 	at java.util.Properties.setProperty(Properties.java:160)
+2013-04-21T03:34:19.237425+00:00 app[web.1]: 	at Global.onStart(Global.java:20)
+2013-04-21T03:34:19.237581+00:00 app[web.1]: 	at play.core.j.JavaGlobalSettingsAdapter.onStart(JavaGlobalSettingsAdapter.scala:17)
+2013-04-21T03:34:19.247179+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63)
+2013-04-21T03:34:19.247490+00:00 app[web.1]: 	at scala.collection.immutable.List.foreach(List.scala:309)
+2013-04-21T03:34:19.247338+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63)
+2013-04-21T03:34:19.246850+00:00 app[web.1]: 	at play.api.GlobalPlugin.onStart(GlobalSettings.scala:175)
+2013-04-21T03:34:19.247644+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:63)
+2013-04-21T03:34:19.247806+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply(Play.scala:63)
+2013-04-21T03:34:19.247987+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply(Play.scala:63)
+2013-04-21T03:34:19.248303+00:00 app[web.1]: 	at play.api.Play$.start(Play.scala:62)
+2013-04-21T03:34:19.248453+00:00 app[web.1]: 	at play.core.StaticApplication.<init>(ApplicationProvider.scala:54)
+2013-04-21T03:34:19.248603+00:00 app[web.1]: 	at play.core.server.NettyServer$.createServer(NettyServer.scala:228)
+2013-04-21T03:34:19.248788+00:00 app[web.1]: 	at play.core.server.NettyServer$$anonfun$main$5.apply(NettyServer.scala:259)
+2013-04-21T03:34:19.248145+00:00 app[web.1]: 	at play.utils.Threads$.withContextClassLoader(Threads.scala:18)
+2013-04-21T03:34:19.250270+00:00 app[web.1]: 	at scala.Option.map(Option.scala:145)
+2013-04-21T03:34:19.250069+00:00 app[web.1]: 	at play.core.server.NettyServer$$anonfun$main$5.apply(NettyServer.scala:258)
+2013-04-21T03:34:19.250425+00:00 app[web.1]: 	at play.core.server.NettyServer$.main(NettyServer.scala:258)
+2013-04-21T03:34:19.250586+00:00 app[web.1]: 	at play.core.server.NettyServer.main(NettyServer.scala)
+2013-04-21T03:34:20.781102+00:00 heroku[web.1]: Process exited with status 255
+2013-04-21T03:34:20.793881+00:00 heroku[web.1]: State changed from starting to crashed
+2013-04-21T03:44:13.410540+00:00 heroku[slugc]: Slug compilation started
+2013-04-21T03:44:20.471230+00:00 heroku[web.1]: State changed from crashed to starting
+2013-04-21T03:44:28.916959+00:00 heroku[web.1]: Starting process with command `target/start -Dhttp.port=56214 -Xmx384m -Xss512k -XX:+UseCompressedOops`
+2013-04-21T03:44:29.754005+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS:  -Djava.rmi.server.useCodebaseOnly=true
+2013-04-21T03:44:30.406241+00:00 app[web.1]: Play server process ID is 2
+2013-04-21T03:44:31.282153+00:00 app[web.1]: java.lang.NullPointerException
+2013-04-21T03:44:31.282565+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63)
+2013-04-21T03:44:31.282153+00:00 app[web.1]: Oops, cannot start the server.
+2013-04-21T03:44:31.282482+00:00 app[web.1]: 	at play.api.GlobalPlugin.onStart(GlobalSettings.scala:175)
+2013-04-21T03:44:31.282397+00:00 app[web.1]: 	at java.util.Hashtable.put(Hashtable.java:411)
+2013-04-21T03:44:31.282397+00:00 app[web.1]: 	at java.util.Properties.setProperty(Properties.java:160)
+2013-04-21T03:44:31.282482+00:00 app[web.1]: 	at Global.onStart(Global.java:20)
+2013-04-21T03:44:31.282625+00:00 app[web.1]: 	at scala.collection.immutable.List.foreach(List.scala:309)
+2013-04-21T03:44:31.282482+00:00 app[web.1]: 	at play.core.j.JavaGlobalSettingsAdapter.onStart(JavaGlobalSettingsAdapter.scala:17)
+2013-04-21T03:44:31.282565+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63)
+2013-04-21T03:44:31.282625+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:63)
+2013-04-21T03:44:31.282695+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply(Play.scala:63)
+2013-04-21T03:44:31.282695+00:00 app[web.1]: 	at play.api.Play$$anonfun$start$1.apply(Play.scala:63)
+2013-04-21T03:44:31.282755+00:00 app[web.1]: 	at play.api.Play$.start(Play.scala:62)
+2013-04-21T03:44:31.282755+00:00 app[web.1]: 	at play.utils.Threads$.withContextClassLoader(Threads.scala:18)
+2013-04-21T03:44:31.282905+00:00 app[web.1]: 	at play.core.server.NettyServer$$anonfun$main$5.apply(NettyServer.scala:259)
+2013-04-21T03:44:31.282905+00:00 app[web.1]: 	at play.core.server.NettyServer$$anonfun$main$5.apply(NettyServer.scala:258)
+2013-04-21T03:44:31.282813+00:00 app[web.1]: 	at play.core.StaticApplication.<init>(ApplicationProvider.scala:54)
+2013-04-21T03:44:31.283004+00:00 app[web.1]: 	at scala.Option.map(Option.scala:145)
+2013-04-21T03:44:31.283004+00:00 app[web.1]: 	at play.core.server.NettyServer.main(NettyServer.scala)
+2013-04-21T03:44:31.283004+00:00 app[web.1]: 	at play.core.server.NettyServer$.main(NettyServer.scala:258)
+2013-04-21T03:44:31.282905+00:00 app[web.1]: 	at play.core.server.NettyServer$.createServer(NettyServer.scala:228)
+2013-04-21T03:44:32.576137+00:00 heroku[web.1]: Process exited with status 255
+2013-04-21T03:44:32.588260+00:00 heroku[web.1]: State changed from starting to crashed
+2013-04-21T03:46:04.570896+00:00 heroku[api]: Release v7 created by jrosses@systhemis.com.br
+2013-04-21T03:46:04.612491+00:00 heroku[api]: Deploy f0ed88a by jrosses@systhemis.com.br
+2013-04-21T03:46:04.701970+00:00 heroku[web.1]: State changed from crashed to starting
+2013-04-21T03:46:05.342643+00:00 heroku[slugc]: Slug compilation finished
+2013-04-21T03:46:16.208203+00:00 heroku[web.1]: Starting process with command `target/start -Dhttp.port=48741 -Xmx384m -Xss512k -XX:+UseCompressedOops`
+2013-04-21T03:46:16.892141+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS:  -Djava.rmi.server.useCodebaseOnly=true
+2013-04-21T03:46:17.558403+00:00 app[web.1]: Play server process ID is 2
+2013-04-21T03:46:19.337997+00:00 app[web.1]: [[37minfo[0m] play - database [default] connected at jdbc:postgresql://ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8
+2013-04-21T03:46:20.378962+00:00 app[web.1]: [[37minfo[0m] play - Application started (Prod)
+2013-04-21T03:46:20.665339+00:00 app[web.1]: [[37minfo[0m] play - Listening for HTTP on /0:0:0:0:0:0:0:0:48741
+2013-04-21T03:46:21.078144+00:00 heroku[web.1]: State changed from starting to up
+2013-04-21T03:46:27.804992+00:00 app[web.1]: 
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ! @6e3f754ip - Internal server error, for (GET) [/] ->
+2013-04-21T03:46:27.804992+00:00 app[web.1]: play.api.Application$$anon$1: Execution exception[[PersistenceException: 
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ### Error querying database.  Cause: java.sql.SQLException: No suitable driver found for postgres://rwomwrrbuzhljs:gbrUbEw8IV8lYheMaai35xSUvL@ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ### The error may involve br.com.systhemis.curupira.model.mapper.UsuarioMapper.selectUsuario
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.api.DefaultApplication.handleError(Application.scala:383) [play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:144) [play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.804992+00:00 app[web.1]: 
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ### Cause: java.sql.SQLException: No suitable driver found for postgres://rwomwrrbuzhljs:gbrUbEw8IV8lYheMaai35xSUvL@ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8]]
+2013-04-21T03:46
+:27.805329+00:00 app[web.1]: ### The error may involve br.com.systhemis.curupira.model.mapper.UsuarioMapper.selectUsuario
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.805329+00:00 app[web.1]: org.apache.ibatis.exceptions.PersistenceException: 
+2013-04-21T03:46:27.805329+00:00 app[web.1]: ### Error querying database.  Cause: java.sql.SQLException: No suitable driver found for postgres://rwomwrrbuzhljs:gbrUbEw8IV8lYheMaai35xSUvL@ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8
+2013-04-21T03:46:27.805329+00:00 app[web.1]: ### The error may exist in UsuarioMapper.xml
+2013-04-21T03:46:27.807286+00:00 app[web.1]: ### The error occurred while executing a query
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:59) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807534+00:00 app[web.1]: 	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:181) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807534+00:00 app[web.1]: 	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:176) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807534+00:00 app[web.1]: 	at java.sql.DriverManager.getConnection(DriverManager.java:169) ~[na:1.6.0_27]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:95) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807534+00:00 app[web.1]: 	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:371) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807534+00:00 app[web.1]: 	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:80) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:140) [play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: ### Cause: java.sql.SQLException: No suitable driver found for postgres://rwomwrrbuzhljs:gbrUbEw8IV8lYheMaai35xSUvL@ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8
+2013-04-21T03:46:27.804992+00:00 app[web.1]: [[31merror[0m] application - 
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ### The error occurred while executing a query
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.804992+00:00 app[web.1]: ### The error may exist in UsuarioMapper.xml
+2013-04-21T03:46:27.805329+00:00 app[web.1]: 	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10-2.1.1.jar:2.1.1]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95) ~[mybatis-3.1.1.jar:3.1.1]
+2013-04-21T03:46:27.807286+00:00 app[web.1]: Caused by: java.sql.SQLException: No suitable driver found for postgres://rwomwrrbuzhljs:gbrUbEw8IV8lYheMaai35xSUvL@ec2-54-225-69-193.compute-1.amazonaws.com:5432/d8bec4kqn7qmf8
+2013-04-21T03:46:27.807286+00:00 app[web.1]: 	at java.sql.DriverManager.getConnection(DriverManager.java:640) ~[na:1.6.0_27]
+2013-04-21T03:46:27.836590+00:00 heroku[router]: at=info method=GET path=/ host=curupira.herokuapp.com fwd="189.55.121.178" dyno=web.1 connect=2ms service=689ms status=500 bytes=1941
