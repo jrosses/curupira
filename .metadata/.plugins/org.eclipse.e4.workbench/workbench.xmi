@@ -4,7 +4,7 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_wM09AKoUEeKfGIFzJo4QcQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_wZ4hkqoUEeKfGIFzJo4QcQ" x="25" y="25" width="1024" height="768">
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
-    <children xsi:type="basic:PartSashContainer" xmi:id="_wZ4hkqoUEeKfGIFzJo4QcQ" horizontal="true">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_wZ4hkqoUEeKfGIFzJo4QcQ" selectedElement="_wZ4hk6oUEeKfGIFzJo4QcQ" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_wZ4hk6oUEeKfGIFzJo4QcQ" elementId="PerspectiveStack" containerData="7500" selectedElement="_weVjwKoUEeKfGIFzJo4QcQ">
         <children xsi:type="advanced:Perspective" xmi:id="_weVjwKoUEeKfGIFzJo4QcQ" elementId="org.eclipse.jdt.ui.JavaPerspective" selectedElement="_weVjwaoUEeKfGIFzJo4QcQ" label="Java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/jperspective.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
@@ -79,10 +79,10 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_weVjyqoUEeKfGIFzJo4QcQ" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_weTukKoUEeKfGIFzJo4QcQ"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_weVjy6oUEeKfGIFzJo4QcQ" containerData="7500">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_weVjzKoUEeKfGIFzJo4QcQ" containerData="7500" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_weVjy6oUEeKfGIFzJo4QcQ" containerData="7500" selectedElement="_weVjzKoUEeKfGIFzJo4QcQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_weVjzKoUEeKfGIFzJo4QcQ" containerData="7500" selectedElement="_weWK0KoUEeKfGIFzJo4QcQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_weVjzaoUEeKfGIFzJo4QcQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_wd3CoKoUEeKfGIFzJo4QcQ"/>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_weWK0KoUEeKfGIFzJo4QcQ" containerData="2500">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_weWK0KoUEeKfGIFzJo4QcQ" containerData="2500" selectedElement="_weWK0aoUEeKfGIFzJo4QcQ">
                   <children xsi:type="basic:PartStack" xmi:id="_weWK0aoUEeKfGIFzJo4QcQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" containerData="5000" selectedElement="_weWK0qoUEeKfGIFzJo4QcQ">
                     <tags>newtablook</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_weWK0qoUEeKfGIFzJo4QcQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_weU8sKoUEeKfGIFzJo4QcQ"/>

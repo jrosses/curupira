@@ -9,6 +9,14 @@ import br.com.systhemis.curupira.model.mapper.UsuarioMapper;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+import play.*;
+
+
 
 public class Application extends Controller {
 
@@ -27,5 +35,11 @@ public class Application extends Controller {
       session.close();
     }
   }
+  
+  public static Result phones(String phoneId) throws IOException {
+	    File jsonFile = Play.application().getFile("public/phones/"+phoneId);
+	    String json = FileUtils.readFileToString(jsonFile);
+	    return ok(json).as("application/json");
+	  }
 
 }
