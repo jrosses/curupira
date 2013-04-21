@@ -28,9 +28,9 @@
  </typeAliases>
 -->
   <mappers>
-   <!-- <mapper resource="app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>-->
-   <mapper url="file:///ProjetosJava/curupira/app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>
-   <!--  <package name="br.com.systhemis.curupira.model.mapper"/>-->
+        <mapper resource="UsuarioMapper.xml"/>
+   <!-- <mapper url="file:///ProjetosJava/curupira/app/br/com/systhemis/curupira/model/mapper/UsuarioMapper.xml"/>-->
+    <!--  <package name="br.com.systhemis.curupira.model.mapper"/>-->
   </mappers>
   
 </configuration>

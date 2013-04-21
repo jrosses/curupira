@@ -21,7 +21,7 @@ public class Application extends Controller {
     	
     	UsuarioMapper mapper = session.getMapper(UsuarioMapper.class);
     	Usuario usuario = mapper.selectUsuario(1);
-    	//Usuario usuario=session.selectOne("br.com.systhemis.curupira.model.mapper.UsuarioMapper.selectUsuario", 1);
+    
         return ok(index.render("O Nome do Usuário é: " + usuario.toString()));
     } finally {
       session.close();
