@@ -1,5 +1,5 @@
 var app = angular.module("app", ["ngResource"])
-  .constant("apiUrl", "http://localhost:9000\:9000/api")
+  .constant("apiUrl", "http://curupira.herokuapp.com\/api")
 	.config(["$routeProvider", function($routeProvider) {
       // WARNING!
       // Never use a route starting with "/views/" or "/api/" or "/assets/"
