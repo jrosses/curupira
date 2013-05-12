@@ -9,7 +9,33 @@ body {
 	border-top: 5px solid #92d13d;
 }
 
-.container {
+.map{ 
+  width:100%; 
+  height:100%; 
+}
+
+
+
+.map img
+{
+    max-width:none;
+}
+
+.form-left-col {
+	width:310px;
+    float: left;
+}
+
+.form-right-col {
+}
+
+.form-left-col input {
+  margin-bottom:15px;
+  margin-top:5px;
+  width:280px;
+}
+
+.container-main {
 	max-width: 1024px;
 	margin: 0px auto;
 	padding: 0px 20px;

@@ -2,22 +2,143 @@
 
 <!DOCTYPE html>
 
-<html class="no-js" data-ng-app="app" data-ng-controller="AppCtrl">
-    <head>
-    		<meta charset="utf-8" />
-	      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	      <meta name="fragment" content="!" />
-        <title>AngularJS PlayFramework Routing</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-    </head>
-    <body>
-    	<div data-ng-view="view"></div>
+<!--[if IEMobile 7]><html class="no-js iem7 oldie linen" data-ng-app="app" data-ng-controller="AppCtrl"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie linen" lang="en" data-ng-app="app" data-ng-controller="AppCtrl"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie linen" lang="en" data-ng-app="app" data-ng-controller="AppCtrl"><![endif]-->
+<!--[if (IE 9)&!(IEMobile)]><html class="no-js ie9 linen" lang="en" data-ng-app="app" data-ng-controller="AppCtrl"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html class="no-js linen" lang="en" data-ng-app="app" data-ng-controller="AppCtrl"><!--<![endif]-->
 
-    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="fragment" content="!" />
+    
+    <title>Curupira</title>
+	<meta name="description" content="Acompanhamento de Reflorestamento">
+	<meta name="author" content="Systhemis Comércio de Software Ltda">
+	
+	<!-- http://davidbcalhoun.com/2010/viewport-metatag -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+
+	<!-- http://www.kylejlarson.com/blog/2012/iphone-5-web-design/ -->
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	
+	
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="@routes.Assets.at("css/reset.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/style.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/colors.css?v=1")">
+	<link rel="stylesheet" media="print" href="@routes.Assets.at("css/print.css?v=1")">
+	<!-- For progressively larger displays -->
+	<link rel="stylesheet" media="only all and (min-width: 480px)" href="@routes.Assets.at("css/480.css?v=1")">
+	<link rel="stylesheet" media="only all and (min-width: 768px)" href="@routes.Assets.at("css/768.css?v=1")">
+	<link rel="stylesheet" media="only all and (min-width: 992px)" href="@routes.Assets.at("css/992.css?v=1")">
+	<link rel="stylesheet" media="only all and (min-width: 1200px)" href="@routes.Assets.at("css/1200.css?v=1")">
+	<!-- For Retina displays -->
+	<link rel="stylesheet" media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="@routes.Assets.at("css/2x.css?v=1")">
+
+	<!-- Additional styles -->
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/form.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/switches.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/agenda.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/dashboard.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/form.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/modal.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/progress-slider.css?v=1")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/styles/switches.css?v=1")">
+
+	<!-- Login pages styles -->
+	<link rel="stylesheet" media="screen" href="@routes.Assets.at("css/login.css?v=1")">
+	
+	
+	<!-- JavaScript at bottom except for Modernizr -->
+	<script src="@routes.Assets.at("js/libs/modernizr.custom.js")"></script>
+
+	<!-- For Modern Browsers -->
+	<link rel="shortcut icon" href="@routes.Assets.at("img/favicons/favicon.png")">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="@routes.Assets.at("img/favicons/favicon.ico")">
+
+	<!-- iOS web-app metas -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- iPhone ICON -->
+	<link rel="apple-touch-icon" href="@routes.Assets.at("img/favicons/apple-touch-icon.png")" sizes="57x57">
+	<!-- iPad ICON -->
+	<link rel="apple-touch-icon" href="@routes.Assets.at("img/favicons/apple-touch-icon-ipad.png")" sizes="72x72">
+	<!-- iPhone (Retina) ICON -->
+	<link rel="apple-touch-icon" href="@routes.Assets.at("img/favicons/apple-touch-icon-retina.png")" sizes="114x114">
+	<!-- iPad (Retina) ICON -->
+	<link rel="apple-touch-icon" href="@routes.Assets.at("img/favicons/apple-touch-icon-ipad-retina.png")" sizes="144x144">
+
+	<!-- iPhone SPLASHSCREEN (320x460) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/splash/iphone.png")" media="(device-width: 320px)">
+	<!-- iPhone (Retina) SPLASHSCREEN (640x960) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/splash/iphone-retina.png")" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPhone 5 SPLASHSCREEN (640×1096) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/splash/iphone5.png")" media="(device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPad (portrait) SPLASHSCREEN (748x1024) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/splash/ipad-portrait.png")" media="(device-width: 768px) and (orientation: portrait)">
+	<!-- iPad (landscape) SPLASHSCREEN (768x1004) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/splash/ipad-landscape.png")" media="(device-width: 768px) and (orientation: landscape)">
+	<!-- iPad (Retina, portrait) SPLASHSCREEN (2048x1496) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/ipad-portrait-retina.png")" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)">
+	<!-- iPad (Retina, landscape) SPLASHSCREEN (1536x2008) -->
+	<link rel="apple-touch-startup-image" href="@routes.Assets.at("img/ipad-landscape-retina.png")" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)">
+
+	<!-- Microsoft clear type rendering -->
+	<meta http-equiv="cleartype" content="on">
+	
+	
+	<!--
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    -->
+</head>
+   
+ <body class="clearfix with-menu with-shortcuts">
+      <div data-ng-view="view"></div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular-resource.min.js"></script>
       <script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+      <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+      <script src="http://openlayers.org/api/OpenLayers.js"></script>
+   
+      <!-- JavaScript at the bottom for fast page loading -->
+
+	  <!-- Scripts -->
+	  <script src="@routes.Assets.at("js/libs/jquery-1.9.1.min.js")"></script>
+	  <script src="@routes.Assets.at("js/setup.js")"></script>
+
+	  <!-- Template functions -->
+	  <script src="@routes.Assets.at("js/developr.input.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.message.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.notify.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.tooltip.js")"></script>
+	  
+	  <script src="@routes.Assets.at("js/developr.input.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.message.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.modal.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.navigable.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.notify.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.scroll.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.progress-slider.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.tooltip.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.confirm.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.agenda.js")"></script>
+	  <script src="@routes.Assets.at("js/developr.tabs.js")"></script>		<!-- Must be loaded last -->
+
+	  <!-- Tinycon -->
+	  <script src="@routes.Assets.at("js/libs/tinycon.min.js")"></script>
+	  
+    
     </body>
 </html>

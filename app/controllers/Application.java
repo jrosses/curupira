@@ -52,22 +52,29 @@ public class Application extends Controller {
 	        return ok(page1.render());
    }
 	  
-	    public static Result page2() throws SQLException {
+   public static Result page2() throws SQLException {
 	    return ok(page2.render());
-	  }
+   }
 	  
-	    public static Result color() throws SQLException {
+   public static Result color() throws SQLException {
 	      return ok(color.render());
-	  }
+   }
 	  
-	    public static Result users() throws SQLException {
+   public static Result users() throws SQLException {
 	       return ok(users.render());
-	  }
+   }
 	  
-	    public static Result user() throws SQLException {
+   public static Result user() throws SQLException {
 	       return ok(user.render());
-	  }
+   }
 
+   public static Result login() throws SQLException {
+       return ok(login.render());
+   }
+   
+   public static Result dashboard() throws SQLException {
+       return ok(dashboard.render());
+   }
   
   public static Result phones(String phoneId) throws IOException 
   {

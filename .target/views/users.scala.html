@@ -1,11 +1,17 @@
 @()
 
 @template() {
-	<h2>Users</h2>
-
-	<ul>
+	
+<div class="form-left-col">
+<h2>Users</h2>
+   <ul>
 		<li data-ng-repeat="u in users">
 			<a data-ng-href="/users/{{u.id}}">User#{{u.id}}: {{u.name}}</a>
 		</li>
 	</ul>
+</div>
+	
+<div class="form-right-col">	
+	<div id="map" class="map" ng-controller="MapCtrl" ng-style="mapStyle()" ng-show="mapShow()"></div>
+</div>
 }

@@ -5,6 +5,8 @@
 # Home page
 GET     /                                   controllers.Application.main(any = "none")
 GET     /views/index                        @controllers.Application.index
+GET     /views/login                        controllers.Application.login
+GET     /views/dashboard                    controllers.Application.dashboard
 GET     /views/page1                        controllers.Application.page1
 GET     /views/page2                        controllers.Application.page2
 GET     /views/color                        controllers.Application.color
